@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django Community App - {% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body class="bg-gray-200">
+    <header>
+      <h1 class="bg-green-900 text-center px-2 py-8 text-gray-200 font-bold text-4xl">Django Community App - Partie 1</h1>
+    </header>
+
+    <main>
+      {% block content %}{% endblock content %}
+    </main>
+  </body>
+</html>

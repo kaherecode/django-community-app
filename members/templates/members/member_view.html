@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+
+{% block title %}Member numéro {{ member_id }}{% endblock title %}
+
+{% block content %}
+  <div class="py-12 px-4 flex flex-wrap">
+    <div class="w-2/12">
+      <img src="https://i.pravatar.cc/250?img=16" alt="" class="w-full object-cover object-center">
+      <ul class="mt-3 flex">
+        <li>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="ml-3">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="ml-3">
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="ml-3">
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="ml-3">
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="ml-3">
+          <a href="#">
+            <i class="fas fa-globe-africa"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="ml-4 w-9/12">
+      <ul>
+        <li>
+          <strong>Prénom et Nom</strong>: N'deye Anta Diop
+        </li>
+        <li>
+          <strong>Titre</strong>: Full Stack Web Developer
+        </li>
+        <li>
+          <strong>Bio</strong>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta, non quibusdam atque quia ipsa incidunt consequatur ea ratione veritatis iste repellendus delectus tempora vel praesentium! Fugiat totam voluptas libero.
+        </li>
+      </ul>
+    </div>
+  </div>
+{% endblock content %}

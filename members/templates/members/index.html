@@ -1,0 +1,221 @@
+{% extends 'layout.html' %}
+
+{% block title %}Accueil{% endblock title %}
+
+{% block content %}
+  <div class="py-12 px-4">
+    <h2 class="text-center font-semibold text-2xl">Nos membres</h2>
+
+    <div class="mt-4 flex flex-wrap -mx-4 justify-center items-center">
+      <div class="member-card">
+        <img src="https://i.pravatar.cc/250?img=16" alt="" class="w-full object-cover object-center">
+        <a href="#">
+          <span class="block mt-4 font-semibold text-xl">N'deye Anta Diop</span>
+        </a>
+        <span class="block text-sm text-gray-700">Full Stack Web Developer</span>
+        <ul class="mt-3 flex">
+          <li>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fas fa-globe-africa"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.pravatar.cc/250?img=49" alt="" class="w-full object-cover object-center">
+        <a href="#">
+          <span class="block mt-4 font-semibold text-xl">Aissatou Lamarana Diallo</span>
+        </a>
+        <span class="block text-sm text-gray-700">Front End Developer</span>
+        <ul class="mt-3 flex">
+          <li>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fas fa-globe-africa"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.pravatar.cc/250?img=51" alt="" class="w-full object-cover object-center">
+        <a href="#">
+          <span class="block mt-4 font-semibold text-xl">Ibrahima Sory Camara</span>
+        </a>
+        <span class="block text-sm text-gray-700">PHP / Symfony Developer</span>
+        <ul class="mt-3 flex">
+          <li>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fas fa-globe-africa"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.pravatar.cc/250?img=64" alt="" class="w-full object-cover object-center">
+        <a href="#">
+          <span class="block mt-4 font-semibold text-xl">Pape Serigne Sow</span>
+        </a>
+        <span class="block text-sm text-gray-700">Senior Software Engineer</span>
+        <ul class="mt-3 flex">
+          <li>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="#">
+              <i class="fas fa-globe-africa"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-12 px-4 text-white bg-green-900">
+    <h2 class="text-center font-semibold text-2xl">Rejoins-nous maintenant</h2>
+
+    <form action="" method="post" class="join-form mt-8 m-auto">
+      <div class="">
+        <label for="" class="block mb-2 text-lg">Une image de toi</label>
+        <input type="file">
+      </div>
+      <div class="mt-4">
+        <input type="text" placeholder="Prénom et Nom *" class="w-full px-3 py-2 outline-none text-black">
+      </div>
+      <div class="mt-4">
+        <input type="email" placeholder="Adresse email *" class="w-full px-3 py-2 outline-none text-black">
+      </div>
+      <div class="mt-4">
+        <input type="text" placeholder="Titre *" class="w-full px-3 py-2 outline-none text-black">
+      </div>
+      <div class="flex justify-between -mx-1">
+        <div class="mt-4 w-1/2 mx-1">
+          <input type="text" placeholder="Compte Github" class="w-full px-3 py-2 outline-none text-black">
+        </div>
+        <div class="mt-4 w-1/2 mx-1">
+          <input type="text" placeholder="Compte Facebook" class="w-full px-3 py-2 outline-none text-black">
+        </div>
+      </div>
+      <div class="flex justify-between -mx-1">
+        <div class="mt-4 w-1/2 mx-1">
+          <input type="text" placeholder="Compte Twitter" class="w-full px-3 py-2 outline-none text-black">
+        </div>
+        <div class="mt-4 w-1/2 mx-1">
+          <input type="text" placeholder="Compte Linkedin" class="w-full px-3 py-2 outline-none text-black">
+        </div>
+      </div>
+      <div class="flex justify-between -mx-1">
+        <div class="mt-4 w-1/2 mx-1">
+          <input type="text" placeholder="Compte Instagram" class="w-full px-3 py-2 outline-none text-black">
+        </div>
+        <div class="mt-4 w-1/2 mx-1">
+          <input type="text" placeholder="Site Web" class="w-full px-3 py-2 outline-none text-black">
+        </div>
+      </div>
+      <div class="mt-4">
+        <textarea type="text" placeholder="Bio" class="w-full px-3 py-2 outline-none text-black" rows="5"></textarea>
+      </div>
+      <div class="mt-4">
+        <input type="submit" value="Valider" class="bg-gray-900 p-3 cursor-pointer w-full">
+      </div>
+    </form>
+  </div>
+{% endblock content %}
