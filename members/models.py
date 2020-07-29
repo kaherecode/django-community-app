@@ -13,7 +13,7 @@ class Member(models.Model):
     facebook = models.CharField(max_length=255, null=True, blank=True)
     instagram = models.CharField(max_length=255, null=True, blank=True)
     website = models.CharField(max_length=255, null=True, blank=True)
-    picture = models.FileField()
+    picture = models.FileField(null=True)
     is_active = models.BooleanField(default=True)
     joined_at = models.DateField(auto_now_add=True)
 
