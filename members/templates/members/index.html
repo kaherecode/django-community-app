@@ -178,7 +178,7 @@
       {% endfor %}
     {% endif %}
 
-    <form action="/" method="post" class="join-form mt-8 m-auto">
+    <form action="/" method="post" class="join-form mt-8 m-auto" enctype="multipart/form-data">
       {% csrf_token %}
       <div class="">
         <label for="" class="block mb-2 text-lg">Une image de toi</label>

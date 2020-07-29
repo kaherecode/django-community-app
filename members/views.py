@@ -7,10 +7,10 @@ from .forms import MemberForm
 def homepage(request):
     if request.method == 'POST':
         # initialise le formulaire avec les données envoyés
-        form = MemberForm(request.POST)
+        form = MemberForm(request.POST, request.FILES)
 
         # si les données sont valides
-        if form.is_valid and not form.errors:
+        if form.is_valid():
             form.save()  # enregistrer le membre en base de données
             form = MemberForm()  # créer un nouveau formulaire vide
 
