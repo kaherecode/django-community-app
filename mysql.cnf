@@ -1,5 +1,0 @@
-[client]
-database = "django_community_app"
-user = "orion"
-password = "@_Ori@n_94"
-default-character-set = utf8
