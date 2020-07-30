@@ -26,7 +26,34 @@ Un dossier `django-community-app` va être créé dans ton dossier courant, il f
 $ pip install -r requirements.txt
 ```
 
-Une fois les dépendances installer, tu peux maintenant démarrer ton projet avec la commande:
+Une fois les dépendances installer, tu peux maintenant configurer une base données.
+
+## Configurer une base de données MySQL
+
+Commence par te rendre sur MySQL et crée une base de données pour ton application.
+
+```sql
+create database django_community_app;
+```
+
+Renomme ensuite le fichier `mysql.cnf.example` qui se trouve à la racine du projet par `mysql.cnf`, tu retires juste le `.example` à la fin du fichier puis modifie le fichier pour renseigner le nom de la base de données que tu viens de créer et les informations de connexion:
+
+```
+[client]
+database = "django_community_app"
+user = "user"
+password = "password"
+default-character-set = utf8
+```
+
+Tu peux maintenant faire les migrations dans ta base de données avec:
+
+```bash
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+
+Et enfin démarrer ton projet avec la commande:
 
 ```bash
 $ python manage.py runserver
